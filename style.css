@@ -1,0 +1,155 @@
+:root {
+  --main-color: #0891b2;
+}
+
+h1 {
+  font-size: 42px;
+}
+h2 {
+  font-size: 24px;
+}
+header p {
+  font-size: 28px;
+}
+header {
+  background: linear-gradient(172deg, #0891b2 74%, white 75%);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* gap: 5px; */
+}
+.aboutimage {
+  background-color: green;
+}
+.aboutimage p {
+  position: relative;
+  margin-top: -110px;
+  font-size: 72px;
+  color: white;
+  text-align: center;
+}
+img {
+  position: relative;
+  width: 650px;
+  object-fit: cover;
+  box-shadow: 1px 1px 15px;
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 1px 1px 15px;
+  padding: 25px;
+  background-color: white;
+  max-width: 800px;
+  min-height: 500px;
+}
+.abouticon {
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: right;
+  gap: 15px;
+}
+i {
+  font-size: 36px;
+}
+
+main {
+  height: 100vh;
+  background-color: white;
+}
+
+.cardcontainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.card {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+.screenshot {
+  background-color: yellow;
+  height: 150px;
+}
+.description {
+}
+
+footer {
+  height: 100vh;
+  background-color: var(--main-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact {
+  color: white;
+}
+.contactimage {
+  background-color: burlywood;
+  width: 500px;
+  height: 300px;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
